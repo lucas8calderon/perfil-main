@@ -1,8 +1,8 @@
 /* Reset and Base Styles */
 * {
-  margin: 0;
+	margin: 0;
   padding: 0;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
@@ -41,7 +41,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
   font-size: 16px;
 }
 
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  text-align: center;
+	text-align: center;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background: var(--gradient-primary);
-  color: white;
+	color: white;
   box-shadow: var(--shadow-medium);
 }
 
@@ -141,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 #header {
-  position: fixed;
-  top: 0;
+	position: fixed;
+	top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -153,28 +153,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="dark"] #header {
-  background: rgba(17, 24, 39, 0.95);
+  background: rgba(17, 24, 39, 0.98);
+  border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
   height: 70px;
 }
 
 .nav-brand a {
-  text-decoration: none;
+	text-decoration: none;
   color: var(--text-primary);
 }
 
 .brand-text {
   font-size: 1.5rem;
   font-weight: 700;
-  display: block;
+	display: block;
+}
+
+[data-theme="dark"] .nav-brand a {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .brand-text {
+  color: #f9fafb;
+  font-weight: 700;
 }
 
 .brand-subtitle {
@@ -183,9 +194,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+[data-theme="dark"] .brand-subtitle {
+  color: #d1d5db;
+}
+
 .nav-menu {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
   gap: 2rem;
 }
 
@@ -201,15 +216,15 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: var(--text-primary);
   font-weight: 500;
-  position: relative;
+	position: relative;
   transition: color 0.3s ease;
 }
 
 .nav-link::after {
-  content: '';
-  position: absolute;
+	content: '';
+	position: absolute;
   bottom: -5px;
-  left: 0;
+	left: 0;
   width: 0;
   height: 2px;
   background: var(--gradient-primary);
@@ -221,6 +236,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .nav-link {
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .nav-link:hover {
   color: var(--primary-color);
 }
 
@@ -236,6 +260,18 @@ h1, h2, h3, h4, h5, h6 {
 .theme-toggle:hover {
   background: var(--primary-color);
   color: white;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: rgba(55, 65, 81, 0.8);
+  color: #f9fafb;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
 }
 
 .hamburger {
@@ -259,14 +295,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  position: relative;
+	position: relative;
   overflow: hidden;
 }
 
 #hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
+	content: '';
+	position: absolute;
+	top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -276,8 +312,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
   padding: 0 20px;
   position: relative;
   z-index: 2;
@@ -299,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   font-weight: 400;
   opacity: 0.9;
-  display: block;
+	display: block;
   margin-bottom: 0.5rem;
 }
 
@@ -356,11 +392,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .floating-elements {
-  position: absolute;
-  top: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
   width: 100%;
-  height: 100%;
+	height: 100%;
 }
 
 .floating-icon {
@@ -451,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills-list {
   display: flex;
-  flex-direction: column;
+	flex-direction: column;
   gap: 1.5rem;
 }
 
@@ -466,9 +502,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   background: var(--gradient-primary);
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
   color: white;
   font-size: 1.5rem;
   flex-shrink: 0;
@@ -487,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-level {
-  display: flex;
+	display: flex;
   align-items: center;
   gap: 1rem;
 }
@@ -497,16 +533,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 8px;
   background: var(--bg-tertiary);
   border-radius: 4px;
-  overflow: hidden;
+	overflow: hidden;
   position: relative;
 }
 
 .skill-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
+	content: '';
+	position: absolute;
+	top: 0;
   left: 0;
-  height: 100%;
+	height: 100%;
   background: var(--gradient-primary);
   border-radius: 4px;
   transition: width 1s ease;
@@ -613,7 +649,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-tag {
   background: var(--gradient-primary);
-  color: white;
+	color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -633,7 +669,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-container {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .carousel-track {
@@ -668,9 +704,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 350px;
   overflow: hidden;
   background: var(--bg-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .project-image img {
@@ -692,9 +728,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -822,8 +858,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .education-item {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
   gap: 2rem;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -844,8 +880,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
+	justify-content: center;
+	color: white;
   font-size: 1.5rem;
   flex-shrink: 0;
 }
@@ -914,7 +950,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+	color: white;
   font-size: 2rem;
   margin: 0 auto 1.5rem;
 }
@@ -961,14 +997,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
   box-shadow: var(--shadow-medium);
   transition: all 0.3s ease;
-  position: relative;
+	position: relative;
   overflow: hidden;
 }
 
 .recommendation-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
+	content: '';
+	position: absolute;
+	top: 0;
   left: 0;
   right: 0;
   height: 4px;
@@ -988,7 +1024,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  opacity: 0.7;
+	opacity: 0.7;
 }
 
 .recommendation-text {
@@ -1063,7 +1099,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-photo {
-  width: 100%;
+	width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
@@ -1106,7 +1142,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-number {
-  font-size: 2rem;
+	font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
   display: block;
@@ -1139,7 +1175,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-info {
   display: flex;
-  flex-direction: column;
+	flex-direction: column;
   gap: 2rem;
 }
 
@@ -1163,8 +1199,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   background: var(--gradient-primary);
   border-radius: 12px;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
   justify-content: center;
   color: white;
   font-size: 1.2rem;
@@ -1343,7 +1379,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .hero-name {
-    font-size: 2.5rem;
+		font-size: 2.5rem;
   }
   
   .hero-buttons {
@@ -1400,12 +1436,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+		flex-direction: column;
+		align-items: center;
+	}
   
   .btn {
-    width: 100%;
+		width: 100%;
     justify-content: center;
   }
   

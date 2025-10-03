@@ -31,15 +31,7 @@ let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
   const currentScrollY = window.scrollY;
-  
-  if (currentScrollY > 100) {
-    header.style.background = 'rgba(255, 255, 255, 0.95)';
-    header.style.backdropFilter = 'blur(10px)';
-  } else {
-    header.style.background = 'rgba(255, 255, 255, 0.95)';
-    header.style.backdropFilter = 'blur(10px)';
-  }
-  
+  updateHeaderStyles();
   lastScrollY = currentScrollY;
 });
 
@@ -58,6 +50,35 @@ if (currentTheme === 'dark') {
   themeIcon.className = 'fas fa-moon';
 }
 
+// Function to update header styles based on theme
+function updateHeaderStyles() {
+  const isDarkMode = body.getAttribute('data-theme') === 'dark';
+  const currentScrollY = window.scrollY;
+  
+  if (currentScrollY > 100) {
+    if (isDarkMode) {
+      header.style.background = 'rgba(17, 24, 39, 0.98)';
+      header.style.borderBottom = '1px solid rgba(75, 85, 99, 0.3)';
+      header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+    } else {
+      header.style.background = 'rgba(255, 255, 255, 0.95)';
+      header.style.borderBottom = '1px solid var(--border-color)';
+      header.style.boxShadow = 'none';
+    }
+  } else {
+    if (isDarkMode) {
+      header.style.background = 'rgba(17, 24, 39, 0.95)';
+      header.style.borderBottom = '1px solid rgba(75, 85, 99, 0.2)';
+      header.style.boxShadow = 'none';
+    } else {
+      header.style.background = 'rgba(255, 255, 255, 0.95)';
+      header.style.borderBottom = '1px solid var(--border-color)';
+      header.style.boxShadow = 'none';
+    }
+  }
+  header.style.backdropFilter = 'blur(10px)';
+}
+
 themeToggle.addEventListener('click', () => {
   const currentTheme = body.getAttribute('data-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -70,6 +91,9 @@ themeToggle.addEventListener('click', () => {
   } else {
     themeIcon.className = 'fas fa-moon';
   }
+  
+  // Update header styles when theme changes
+  updateHeaderStyles();
 });
 
 // Projects Carousel
@@ -196,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('carousel-track')) {
     new Carousel();
   }
+  
+  // Initialize header styles
+  updateHeaderStyles();
 });
 
 // Intersection Observer for animations
