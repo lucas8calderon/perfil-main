@@ -110,6 +110,13 @@ strong { color: var(--text); font-weight: 600; }
 .btn-primary:hover { box-shadow: 0 10px 30px -8px var(--accent); transform: translateY(-1px); }
 .btn-ghost { border-color: var(--border-hi); background: transparent; color: var(--text); }
 .btn-ghost:hover { border-color: var(--accent-line); background: var(--accent-soft); }
+.btn-whatsapp { background: transparent; border-color: var(--border-hi); color: var(--text); }
+.btn-whatsapp .wa-icon { color: #25d366; transition: color .2s; }
+.btn-whatsapp:hover, .btn-whatsapp:focus-visible { background: #25d366; border-color: #25d366; color: #052e16; transform: translateY(-1px); }
+.btn-whatsapp:hover .wa-icon, .btn-whatsapp:focus-visible .wa-icon { color: currentColor; }
+.btn .wa-icon { width: 1.15rem; height: 1.15rem; }
+.btn:hover .wa-icon { transform: none; }
+.panel-cta { display: flex; flex-wrap: wrap; gap: .5rem; }
 .btn-sm { min-height: 2.4rem; padding: .45rem 1rem; font-size: .88rem; }
 .btn-lg { min-height: 3.3rem; padding: .85rem 1.5rem; }
 
@@ -381,6 +388,9 @@ strong { color: var(--text); font-weight: 600; }
 .contact-card h2 { margin: 1.2rem auto 0; max-width: 18ch; font-size: clamp(2rem, 5vw, 3.4rem); }
 .contact-lede { margin: 1rem auto 0; max-width: 34rem; color: var(--muted); font-size: 1.05rem; }
 .contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 2.2rem; }
+.contact-actions .btn { background: transparent; border-color: var(--border-hi); color: var(--text); box-shadow: none; }
+.contact-actions .btn:hover, .contact-actions .btn:focus-visible { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); transform: translateY(-1px); }
+.contact-actions .btn-whatsapp:hover, .contact-actions .btn-whatsapp:focus-visible { background: #25d366; border-color: #25d366; color: #052e16; }
 .copy-email { max-width: 100%; }
 .copy-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .contact-extra { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.6rem; margin-top: 1.8rem; font-size: .88rem; }
