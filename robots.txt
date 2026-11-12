@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucas8calderon.github.io/perfil-main/sitemap.xml
