@@ -11,34 +11,34 @@
         else if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
       } catch (error) {}
       document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.classList.add("js");
     })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Calderon | Android Software Engineer</title>
-  <meta name="description" content="Lucas Calderon, desenvolvedor Android nativo em São Paulo. Engenheiro de software na Phoebus, com experiência em Kotlin, Jetpack Compose e Smart POS.">
+  <title>Lucas Calderon | Android Engineer</title>
+  <meta name="description" content="Lucas Calderon, Android Engineer em São Paulo. 4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
   <meta name="author" content="Lucas Calderon">
-  <meta name="theme-color" content="#09090B">
+  <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="https://lucas8calderon.github.io/perfil-main/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Lucas Calderon">
-  <meta property="og:title" content="Lucas Calderon | Android Software Engineer">
-  <meta property="og:description" content="Lucas Calderon, desenvolvedor Android nativo em São Paulo. Engenheiro de software na Phoebus, com experiência em Kotlin, Jetpack Compose e Smart POS.">
+  <meta property="og:title" content="Lucas Calderon | Android Engineer">
+  <meta property="og:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
   <meta property="og:url" content="https://lucas8calderon.github.io/perfil-main/">
   <meta property="og:image" content="https://lucas8calderon.github.io/perfil-main/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lucas Calderon, Android Software Engineer">
+  <meta property="og:image:alt" content="Lucas Calderon, Android Engineer">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucas Calderon | Android Software Engineer">
-  <meta name="twitter:description" content="Lucas Calderon, desenvolvedor Android nativo em São Paulo. Engenheiro de software na Phoebus, com experiência em Kotlin, Jetpack Compose e Smart POS.">
+  <meta name="twitter:title" content="Lucas Calderon | Android Engineer">
+  <meta name="twitter:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
   <meta name="twitter:image" content="https://lucas8calderon.github.io/perfil-main/img/og.png">
-  <meta name="twitter:image:alt" content="Lucas Calderon, Android Software Engineer">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./favicon.png" type="image/png" sizes="32x32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script type="application/ld+json">
   {
@@ -46,7 +46,9 @@
     "@type": "Person",
     "name": "Lucas Calderon",
     "url": "https://lucas8calderon.github.io/perfil-main/",
-    "jobTitle": "Engenheiro de Software",
+    "jobTitle": "Android Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+    "knowsAbout": ["Android", "Kotlin", "Jetpack Compose", "Clean Architecture", "MVVM", "Smart POS"],
     "sameAs": [
       "https://www.linkedin.com/in/lucascalderon/",
       "https://github.com/lucas8calderon"
@@ -55,161 +57,189 @@
   </script>
 </head>
 <!--
-  FONTE DE VERDADE: este arquivo.
-  O GitHub Pages publica o HTML abaixo. Não há segunda cópia dos textos em JS.
+  FONTE DE VERDADE: este arquivo. O GitHub Pages publica o HTML abaixo.
   Edite cargos, datas, projetos e contatos nas seções comentadas.
-  Caminhos de arquivo são relativos (./) para funcionar na raiz local e em /perfil-main/.
+  Caminhos relativos (./) para funcionar na raiz local e em /perfil-main/.
 -->
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-header" id="topo">
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio">Lucas Calderon</a>
+      <a class="brand" href="#inicio" aria-label="Lucas Calderon, início">
+        <span class="brand-mark" aria-hidden="true">LC</span>
+        <span class="brand-name">Lucas Calderon</span>
+      </a>
 
-      <details class="nav-details">
-        <summary class="nav-toggle">
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="visually-hidden">Menu</span>
-        </summary>
-        <nav id="nav-menu" aria-label="Seções">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#inicio">Início</a></li>
-            <li><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li><a class="nav-link" href="#experiencia">Experiência</a></li>
-            <li><a class="nav-link" href="#especialidades">Especialidades</a></li>
-            <li><a class="nav-link" href="#projetos">Projetos</a></li>
-            <li><a class="nav-link" href="#contato">Contato</a></li>
-            <li>
-              <a class="cv-link mobile-only js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">
-                <span class="btn-label">Currículo</span>
-                <span class="visually-hidden cv-note">no LinkedIn, enquanto o PDF não está publicado</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </details>
-      <script>
-        (function () {
-          var nav = document.querySelector(".nav-details");
-          if (nav && window.matchMedia("(min-width: 981px)").matches) nav.open = true;
-        })();
-      </script>
+      <nav class="nav" id="nav-menu" aria-label="Seções">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#entrego">O que faço</a></li>
+          <li><a class="nav-link" href="#experiencia">Experiência</a></li>
+          <li><a class="nav-link" href="#stack">Stack</a></li>
+          <li><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
 
       <div class="header-tools">
         <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Ativar tema claro">
-          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"></path>
-          </svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7">
-            <path d="M20 14.5A7.5 7.5 0 1 1 9.5 4 6 6 0 0 0 20 14.5z"></path>
-          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 14.5A7.5 7.5 0 1 1 9.5 4 6 6 0 0 0 20 14.5z"/></svg>
         </button>
-        <a class="icon-btn" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.28 9.28 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path>
-          </svg>
+        <a class="icon-btn hide-sm" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.28 9.28 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
         </a>
-        <a class="icon-btn" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.48h4.52V24H.24V8.48zM8.34 8.48h4.33v2.12h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V24h-4.52v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V24H8.34V8.48z"></path>
-          </svg>
+        <a class="icon-btn hide-sm" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.48h4.52V24H.24V8.48zM8.34 8.48h4.33v2.12h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V24h-4.52v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V24H8.34V8.48z"/></svg>
         </a>
-        <a class="cv-link desktop-only js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">
-          <span class="btn-label">Currículo</span>
-          <span class="visually-hidden cv-note">no LinkedIn, enquanto o PDF não está publicado</span>
-        </a>
+        <a class="btn btn-primary btn-sm hide-sm" href="#contato">Vamos conversar</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <main id="conteudo">
+    <!-- HERO -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Android Software Engineer</p>
-          <h1 id="hero-title">Construindo experiências Android com engenharia, performance e escalabilidade.</h1>
-          <p class="lede">Sou Lucas Calderon, desenvolvedor especializado em aplicações Android nativas, arquitetura de software e integrações que conectam tecnologia a problemas reais.</p>
-          <p class="role-line">São Paulo, SP · Engenheiro de Software na Phoebus</p>
-          <p class="objective">Objetivo: oportunidades Android pleno e sênior.</p>
+          <div class="hero-id">
+            <img class="avatar" src="./img/LUCAS.jpg" width="681" height="724" alt="Foto de Lucas Calderon" fetchpriority="high">
+            <div>
+              <p class="hero-name">Lucas Calderon</p>
+              <p class="status"><span class="dot" aria-hidden="true"></span>Aberto a vagas Android Pleno / Sênior</p>
+            </div>
+          </div>
+
+          <h1 id="hero-title">
+            Apps Android nativos para
+            <span class="rotator" aria-live="polite"><span class="rotator-word">bancos digitais</span></span>
+          </h1>
+
+          <p class="lede">Engenheiro Android com <strong>4+ anos em Kotlin e Jetpack Compose</strong>. Já entreguei funcionalidades nos apps do <strong>Bradesco</strong> e do <strong>Next</strong> e apps para <strong>Smart POS</strong> no setor de pagamentos.</p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-primary" href="#projetos">Ver projetos
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
             <a class="btn btn-ghost js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">
               <span class="btn-label">Currículo</span>
               <span class="visually-hidden cv-note">no LinkedIn, enquanto o PDF não está publicado</span>
             </a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">LinkedIn</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li>📍 São Paulo, SP</li>
+            <li>💼 Engenheiro de Software na Phoebus</li>
+            <li>🎓 Eng. de Computação</li>
+          </ul>
+        </div>
+
+        <!-- Cartão com dois modos: resumo para recrutadores e código para devs -->
+        <div class="hero-panel" data-view="recruiter">
+          <div class="panel-tabs" role="tablist" aria-label="Escolha a visão">
+            <button class="panel-tab" role="tab" type="button" id="tab-recruiter" aria-controls="view-recruiter" aria-selected="true" data-target="recruiter">👔 Sou recrutador</button>
+            <button class="panel-tab" role="tab" type="button" id="tab-dev" aria-controls="view-dev" aria-selected="false" tabindex="-1" data-target="dev">⌨️ Sou dev</button>
+            <span class="tab-glider" aria-hidden="true"></span>
+          </div>
+
+          <div class="panel-view" id="view-recruiter" role="tabpanel" aria-labelledby="tab-recruiter">
+            <dl class="profile-sheet">
+              <div><dt>Cargo-alvo</dt><dd>Android Engineer · Pleno / Sênior</dd></div>
+              <div><dt>Experiência</dt><dd>4+ anos com Android nativo</dd></div>
+              <div><dt>Domínios</dt><dd>Bancos digitais · Pagamentos · Smart POS</dd></div>
+              <div><dt>Stack principal</dt><dd>Kotlin, Jetpack Compose, Coroutines, Hilt</dd></div>
+              <div><dt>Arquitetura</dt><dd>MVVM, Clean Architecture, modularização</dd></div>
+              <div><dt>Formação</dt><dd>Bacharel em Engenharia de Computação</dd></div>
+              <div><dt>Base</dt><dd>São Paulo, SP</dd></div>
+            </dl>
+            <div class="panel-foot">
+              <a class="btn btn-primary btn-sm" href="#contato">Falar com o Lucas</a>
+              <a class="text-link js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">Ver perfil completo ↗</a>
+            </div>
+          </div>
+
+          <div class="panel-view" id="view-dev" role="tabpanel" aria-labelledby="tab-dev" hidden>
+            <div class="code-window">
+              <div class="code-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lucas.kt</span></div>
+<pre><code><span class="k">object</span> <span class="t">Lucas</span> : <span class="t">AndroidEngineer</span> {
+  <span class="k">override val</span> stack = <span class="f">listOf</span>(
+    <span class="s">"Kotlin"</span>, <span class="s">"Jetpack Compose"</span>,
+    <span class="s">"Coroutines"</span>, <span class="s">"Hilt"</span>, <span class="s">"Retrofit"</span>
+  )
+  <span class="k">override val</span> architecture =
+    <span class="s">"MVVM + Clean Architecture"</span>
+  <span class="k">override val</span> shipped = <span class="f">setOf</span>(
+    <span class="t">Banking</span>(<span class="s">"Bradesco"</span>, <span class="s">"Next"</span>),
+    <span class="t">Payments</span>(<span class="s">"Smart POS"</span>)
+  )
+  <span class="k">override fun</span> <span class="f">nextRole</span>() =
+    <span class="t">Role</span>.<span class="t">Android</span>(<span class="t">Pleno</span>, <span class="t">Senior</span>)
+}</code></pre>
+            </div>
+            <div class="panel-foot">
+              <a class="btn btn-primary btn-sm" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me">Abrir GitHub ↗</a>
+              <a class="text-link" href="#stack">Ver stack completa</a>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="hero-visual">
-          <figure class="portrait">
-            <img src="./img/LUCAS.jpg" width="681" height="724" alt="Retrato de Lucas Calderon" fetchpriority="high">
-          </figure>
-          <figure class="code-card">
-            <figcaption>Ilustração · Kotlin</figcaption>
-            <pre><code>data class HomeUi(
-    val title: String
-)
-
-class HomeViewModel : ViewModel() {
-    val ui = MutableStateFlow(
-        HomeUi("Início")
-    )
-}</code></pre>
-            <p class="code-note">Trecho genérico, só para composição visual. Não é código de um aplicativo real.</p>
-          </figure>
-        </div>
+      <!-- Números: todos derivados da experiência e das certificações abaixo -->
+      <div class="container">
+        <ul class="stats">
+          <li class="stat"><strong><span class="count" data-to="4">4</span>+</strong><span>anos com Android nativo</span></li>
+          <li class="stat"><strong><span class="count" data-to="2">2</span></strong><span>apps bancários: Bradesco e Next</span></li>
+          <li class="stat"><strong><span class="count" data-to="3">3</span></strong><span>empresas de tecnologia</span></li>
+          <li class="stat"><strong><span class="count" data-to="6">6</span></strong><span>certificações Android / Kotlin</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section class="section" id="sobre" aria-labelledby="sobre-title">
+    <!-- FAIXA DE STACK -->
+    <div class="marquee" aria-label="Tecnologias">
+      <div class="marquee-track">
+        <ul>
+          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>Firebase</li><li>Java</li><li>Navigation</li><li>DataBinding</li><li>Smart POS</li><li>Git</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>Firebase</li><li>Java</li><li>Navigation</li><li>DataBinding</li><li>Smart POS</li><li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- O QUE ENTREGO -->
+    <section class="section" id="entrego" aria-labelledby="entrego-title">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Sobre</p>
-          <h2 id="sobre-title">Android nativo, do detalhe da interface à integração.</h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>Sou desenvolvedor Android com experiência na construção e evolução de aplicações nativas, trabalhando com Kotlin, Java, arquiteturas modernas e integrações com serviços e dispositivos.</p>
-          <p>Minha atuação envolve desde o desenvolvimento de interfaces e componentes reutilizáveis até integrações com APIs, meios de pagamento e soluções utilizadas em operações reais.</p>
-          <p>Busco construir software confiável, escalável e de fácil manutenção, equilibrando qualidade técnica, experiência do usuário e necessidades do negócio.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card reveal">
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
-              <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
-              <path d="M11 18.5h2"></path>
-            </svg>
-            <h3>Android nativo</h3>
-            <p>Aplicações Android com Kotlin, Java e Jetpack Compose, da interface à evolução do código já em uso.</p>
+        <header class="section-head reveal">
+          <p class="eyebrow">O que eu faço</p>
+          <h2 id="entrego-title">Do pixel na tela à integração com o hardware.</h2>
+          <p class="section-intro">Trabalho com Android nativo em produtos usados todos os dias: apps de banco, fluxos de pagamento e maquininhas Smart POS.</p>
+        </header>
+        <div class="cap-grid">
+          <article class="cap spot reveal">
+            <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></span>
+            <h3>Interfaces com Compose</h3>
+            <p>Telas declarativas em Jetpack Compose, componentes reutilizáveis e padronização de design system.</p>
           </article>
-          <article class="card reveal">
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M4 7h16M4 12h10M4 17h16"></path>
-              <path d="M16 10.5 19 12l-3 1.5"></path>
-            </svg>
-            <h3>Arquitetura e qualidade</h3>
-            <p>MVVM, Clean Architecture, Hilt e Koin no trabalho descrito na Foursys, com atenção a código que outra pessoa consiga manter.</p>
+          <article class="cap spot reveal">
+            <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5v-7z"/><path d="M12 12.2 20 8.5M12 12.2V20M12 12.2 4 8.5"/></svg></span>
+            <h3>Arquitetura que escala</h3>
+            <p>MVVM, Clean Architecture, injeção de dependência (Hilt, Koin) e modularização em bases de código grandes.</p>
           </article>
-          <article class="card reveal">
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
-              <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-              <path d="M3 10h18"></path>
-            </svg>
-            <h3>Integrações financeiras</h3>
-            <p>Smart POS na Opdv e, na Foursys, os módulos de Investimentos, Poupança e Comprovantes nos aplicativos do Bradesco e do Next.</p>
+          <article class="cap spot reveal">
+            <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>
+            <h3>Pagamentos e Smart POS</h3>
+            <p>Apps que rodam em maquininhas de pagamento, com integração ao dispositivo e a APIs de backend.</p>
           </article>
-          <article class="card reveal">
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5v-7z"></path>
-              <path d="M12 12.2 20 8.5M12 12.2V20M12 12.2 4 8.5"></path>
-            </svg>
-            <h3>Produtos e soluções reais</h3>
-            <p>A experiência de produto está na Opdv e na Foursys. Os repositórios públicos desta página são estudos e clones, separados desse trabalho.</p>
+          <article class="cap spot reveal">
+            <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
+            <h3>Time e qualidade</h3>
+            <p>Revisão de código, SCRUM e comunicação clara. Colegas destacam a capacidade de simplificar o complexo.</p>
           </article>
         </div>
       </div>
@@ -218,491 +248,233 @@ class HomeViewModel : ViewModel() {
     <!-- EXPERIÊNCIA -->
     <section class="section" id="experiencia" aria-labelledby="experiencia-title">
       <div class="container">
-        <div class="section-head reveal">
+        <header class="section-head reveal">
           <p class="eyebrow">Experiência</p>
-          <h2 id="experiencia-title">Trajetória profissional</h2>
-          <p class="section-intro">Cargos, empresas e períodos como já estavam publicados. A atuação em Android começa na Foursys; PCP e CNC ficam registrados como são, sem serem reescritos como engenharia de software.</p>
-        </div>
+          <h2 id="experiencia-title">Onde já entreguei.</h2>
+        </header>
 
         <ol class="timeline">
           <li class="job reveal">
-            <p class="period">mar 2026 — atual</p>
-            <div>
-              <h3>Engenheiro de Software</h3>
-              <p class="company">Phoebus · João Pessoa, PB</p>
-              <p>O detalhe técnico das atividades neste cargo ainda não foi confirmado para este portfólio.</p>
+            <div class="job-when"><span class="pill pill-live">Atual</span>mar 2026 — hoje</div>
+            <div class="job-body">
+              <h3>Engenheiro de Software <span class="at">@ Phoebus</span></h3>
+              <p class="job-where">João Pessoa, PB</p>
             </div>
           </li>
           <li class="job reveal">
-            <p class="period">fev 2023 — mar 2026</p>
-            <div>
-              <h3>Desenvolvedor Android</h3>
-              <p class="company">Opdv · Porto Alegre, RS</p>
-              <p>Desenvolvimento de aplicações Android para Smart POS, no contexto de pagamentos, com Kotlin, Jetpack Compose, Hilt, Retrofit e Firebase.</p>
+            <div class="job-when">fev 2023 — mar 2026</div>
+            <div class="job-body">
+              <h3>Desenvolvedor Android <span class="at">@ Opdv</span></h3>
+              <p class="job-where">Porto Alegre, RS · Pagamentos</p>
+              <p>Apps Android para <strong>Smart POS</strong> no contexto de meios de pagamento, com Kotlin, Jetpack Compose, Hilt, Retrofit e Firebase.</p>
               <ul class="tag-list" aria-label="Tecnologias na Opdv">
-                <li class="tag">Kotlin</li>
-                <li class="tag">Jetpack Compose</li>
-                <li class="tag">Hilt</li>
-                <li class="tag">Retrofit</li>
-                <li class="tag">Firebase</li>
-                <li class="tag">Smart POS</li>
+                <li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Retrofit</li><li>Firebase</li><li>Smart POS</li>
               </ul>
             </div>
           </li>
           <li class="job reveal">
-            <p class="period">abr 2022 — ago 2023</p>
-            <div>
-              <h3>Desenvolvedor Android</h3>
-              <p class="company">Foursys · Barueri, SP</p>
-              <p>Desenvolvimento Android nos módulos de Investimentos, Poupança e Comprovantes dos aplicativos Bradesco e Next. A descrição já publicada inclui Kotlin, Java, MVVM, Clean Architecture, Coroutines, Jetpack (Navigation, DataBinding e Lifecycle), Hilt, Koin, APIs REST e Firebase, além de modularização, padronização de design system, SCRUM e revisão de código.</p>
+            <div class="job-when">abr 2022 — ago 2023</div>
+            <div class="job-body">
+              <h3>Desenvolvedor Android <span class="at">@ Foursys</span></h3>
+              <p class="job-where">Barueri, SP · Bancário</p>
+              <p>Módulos de <strong>Investimentos, Poupança e Comprovantes</strong> nos apps do <strong>Bradesco</strong> e do <strong>Next</strong>. Modularização, padronização de design system, revisão de código e SCRUM.</p>
               <ul class="tag-list" aria-label="Tecnologias na Foursys">
-                <li class="tag">Kotlin</li>
-                <li class="tag">Java</li>
-                <li class="tag">MVVM</li>
-                <li class="tag">Clean Architecture</li>
-                <li class="tag">Hilt</li>
-                <li class="tag">Koin</li>
-                <li class="tag">Jetpack</li>
-                <li class="tag">Firebase</li>
+                <li>Kotlin</li><li>Java</li><li>MVVM</li><li>Clean Architecture</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Jetpack</li><li>Firebase</li>
               </ul>
             </div>
           </li>
-          <li class="job reveal">
-            <p class="period">fev 2020 — out 2021</p>
-            <div>
-              <h3>Coordenador de PCP</h3>
-              <p class="company">Aerem Brasil · São Paulo, SP</p>
-              <p>Coordenação de PCP, com programas em AutoCAD e Metallix, acompanhamento de puncionadeira CNC e apoio ao planejamento da produção. Não é um cargo de desenvolvimento Android.</p>
-            </div>
-          </li>
-          <li class="job reveal">
-            <p class="period">jun 2015 — fev 2020</p>
-            <div>
-              <h3>Programador Pleno de Controle Numérico Computadorizado (CNC)</h3>
-              <p class="company">Maxtil Indústria e Comércio · Guarulhos, SP</p>
-              <p>Programas e desenhos para puncionadeira CNC, com AutoCAD, Campath, Metallix e ERP.</p>
+          <li class="job job-prev reveal">
+            <div class="job-when">2015 — 2021</div>
+            <div class="job-body">
+              <h3>Antes do Android: indústria</h3>
+              <p>Programador CNC na Maxtil (2015–2020) e Coordenador de PCP na Aerem Brasil (2020–2021). Seis anos de programação de máquinas, AutoCAD e planejamento de produção: a base de lógica e precisão que levei para o software.</p>
             </div>
           </li>
         </ol>
-
-        <div class="schools" id="formacao">
-          <div class="section-head reveal">
-            <p class="eyebrow">Formação</p>
-            <h2>Formação acadêmica</h2>
-          </div>
-          <article class="school reveal">
-            <p class="period">2019 — 2023</p>
-            <h3>Bacharelado em Engenharia de Computação</h3>
-            <p class="school-meta">Universidade Cruzeiro do Sul · São Paulo, SP</p>
-          </article>
-          <article class="school reveal">
-            <p class="period">2021 — 2022</p>
-            <h3>CST em Análise e Desenvolvimento de Sistemas</h3>
-            <p class="school-meta">UNIVERITAS · Guarulhos, SP</p>
-          </article>
-          <article class="school reveal">
-            <p class="period">2017 — 2021 · trancado</p>
-            <h3>Bacharelado em Engenharia Mecânica</h3>
-            <p class="school-meta">Universidade Cruzeiro do Sul · São Paulo, SP</p>
-            <p>Curso informado como trancado. Não faz parte da atuação em Android.</p>
-          </article>
-        </div>
       </div>
     </section>
 
-    <!-- ESPECIALIDADES -->
-    <section class="section" id="especialidades" aria-labelledby="especialidades-title">
+    <!-- STACK -->
+    <section class="section" id="stack" aria-labelledby="stack-title">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Especialidades</p>
-          <h2 id="especialidades-title">O que o trabalho publicado sustenta</h2>
-          <p class="section-intro">Agrupado por tema, sem nível e sem porcentagem. Entram tecnologias citadas na experiência ou nos projetos desta página. Itens sem esse lastro ficaram de fora.</p>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-card reveal">
-            <p class="skill-kicker">Android Development</p>
-            <h3>Desenvolvimento Android</h3>
-            <ul class="tag-list">
-              <li class="tag">Kotlin</li>
-              <li class="tag">Java</li>
-              <li class="tag">Jetpack Compose</li>
-              <li class="tag">Android Jetpack</li>
-              <li class="tag">Coroutines</li>
-            </ul>
+        <header class="section-head reveal">
+          <p class="eyebrow">Stack</p>
+          <h2 id="stack-title">Ferramentas que uso no dia a dia.</h2>
+          <p class="section-intro">Só entra aqui o que aparece na minha experiência ou nos meus projetos.</p>
+        </header>
+        <div class="stack-grid">
+          <article class="stack-card spot reveal">
+            <h3>Android</h3>
+            <ul class="tag-list"><li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>Coroutines</li><li>Navigation</li><li>DataBinding</li><li>Lifecycle</li></ul>
           </article>
-          <article class="skill-card reveal">
-            <p class="skill-kicker">Architecture</p>
+          <article class="stack-card spot reveal">
             <h3>Arquitetura</h3>
-            <ul class="tag-list">
-              <li class="tag">MVVM</li>
-              <li class="tag">Clean Architecture</li>
-              <li class="tag">Hilt</li>
-              <li class="tag">Koin</li>
-            </ul>
+            <ul class="tag-list"><li>MVVM</li><li>Clean Architecture</li><li>Modularização</li><li>Hilt</li><li>Koin</li></ul>
           </article>
-          <article class="skill-card reveal">
-            <p class="skill-kicker">Networking &amp; Data</p>
+          <article class="stack-card spot reveal">
             <h3>Rede e dados</h3>
-            <ul class="tag-list">
-              <li class="tag">Retrofit</li>
-              <li class="tag">Firebase</li>
-              <li class="tag">APIs REST</li>
-            </ul>
+            <ul class="tag-list"><li>Retrofit</li><li>APIs REST</li><li>Firebase</li></ul>
           </article>
-          <article class="skill-card reveal">
-            <p class="skill-kicker">Payments &amp; Devices</p>
-            <h3>Pagamentos e dispositivos</h3>
-            <ul class="tag-list">
-              <li class="tag">Smart POS</li>
-              <li class="tag">Fluxos de pagamento</li>
-            </ul>
-          </article>
-          <article class="skill-card reveal">
-            <p class="skill-kicker">Quality &amp; Tooling</p>
-            <h3>Qualidade e ferramentas</h3>
-            <ul class="tag-list">
-              <li class="tag">Git</li>
-              <li class="tag">GitHub</li>
-              <li class="tag">Revisão de código</li>
-            </ul>
+          <article class="stack-card spot reveal">
+            <h3>Domínio e processo</h3>
+            <ul class="tag-list"><li>Smart POS</li><li>Fluxos de pagamento</li><li>Design system</li><li>Code review</li><li>SCRUM</li><li>Git</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROJETOS -->
+    <!-- PROJETOS: estudos e clones publicados no GitHub pessoal; valores nas imagens são fictícios -->
     <section class="section" id="projetos" aria-labelledby="projetos-title">
       <div class="container">
-        <div class="section-head reveal">
+        <header class="section-head reveal">
           <p class="eyebrow">Projetos</p>
-          <h2 id="projetos-title">Estudos e clones públicos</h2>
-          <p class="section-intro">Nenhum card abaixo é um produto em produção. O trabalho em aplicativos de empresa está na experiência: Smart POS na Opdv e módulos do Bradesco e do Next na Foursys. Estes repositórios são exercícios de portfólio. Os valores que aparecem nas imagens são fictícios.</p>
+          <h2 id="projetos-title">Laboratório no GitHub.</h2>
+          <p class="section-intro">Estudos e clones de interface que uso para praticar fluxos e arquitetura. O trabalho de produção está na experiência acima.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar projetos por linguagem">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="kotlin" aria-pressed="false">Kotlin</button>
+          <button class="filter" type="button" data-filter="java" aria-pressed="false">Java</button>
+          <button class="filter" type="button" data-filter="firebase" aria-pressed="false">Firebase</button>
         </div>
 
-        <div class="projects">
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/img_neon.jpg" width="1058" height="945" alt="Telas do clone de estudo Neon, com lista de usuários, abertura e saldo fictício" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Clone · estudo</p>
-              <h3>Neon</h3>
-              <p>Clone de estudo da interface do aplicativo Neon. As telas mostram seleção de usuário, saldo e atividades. Não é o produto da Neon.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Exercício de reproduzir fluxos visuais de um aplicativo bancário, sem ser o aplicativo original.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Implementação publicada no GitHub pessoal. Um registro público de 2023 confirma que se trata de um clone.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Android, Java e Firebase, como já indicados neste portfólio.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Organizar navegação, lista de usuários e uma tela de saldo em um exercício de interface.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Conjunto de telas de demonstração. Os nomes e os valores da imagem são fictícios.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/neon_bank" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/linkbank.png" width="963" height="797" alt="Telas do estudo LinkBank, com conta, transações e uma área de seguros, em valores fictícios" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Estudo</p>
+        <div class="project-grid">
+          <a class="project spot reveal" data-tags="kotlin firebase" href="https://github.com/lucas8calderon/LinkBank" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/linkbank.png" width="963" height="797" alt="Telas do LinkBank: conta, transações e seguros, com valores fictícios" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Estudo · Fintech</p>
               <h3>LinkBank</h3>
-              <p>Estudo de interface de um aplicativo financeiro, com telas de conta, transferências, pagamentos, recarga e seguros. Não é um banco em operação.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Montar, como estudo, os fluxos de uma conta digital em Android.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Aplicativo de estudo publicado no GitHub pessoal.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Kotlin, Firebase e API REST, como já indicados neste portfólio.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Reunir conta, transações, pagamentos e uma tela de seguros na mesma navegação de estudo.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Telas de demonstração. O saldo e os lançamentos da imagem não são dados reais.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/LinkBank" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+              <p>Conta digital com transferências, pagamentos, recarga e seguros em uma só navegação.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Firebase</li><li>REST</li></ul>
+              <span class="project-cta">Ver código ↗</span>
             </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/img_port10.jpg" width="1061" height="942" alt="Telas do estudo de combustível, com mapa, cálculos e registro de despesas" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Estudo</p>
+          </a>
+          <a class="project spot reveal" data-tags="java firebase" href="https://github.com/lucas8calderon/neon_bank" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/img_neon.jpg" width="1058" height="945" alt="Telas do clone de estudo do Neon: usuários, abertura e saldo fictício" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Clone de estudo · Banco</p>
+              <h3>Neon</h3>
+              <p>Reprodução dos fluxos visuais de um banco digital: seleção de usuário, saldo e atividades.</p>
+              <ul class="tag-list"><li>Java</li><li>Firebase</li></ul>
+              <span class="project-cta">Ver código ↗</span>
+            </div>
+          </a>
+          <a class="project spot reveal" data-tags="kotlin" href="https://github.com/lucas8calderon/Combustivel_app" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/img_port10.jpg" width="1061" height="942" alt="Telas do app Combustível: mapa, cálculos e registro de despesas" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Estudo · Utilitário</p>
               <h3>Combustível</h3>
-              <p>Estudo para controle de despesas com combustível. As telas reúnem comparação entre combustíveis, média de consumo, registros e um mapa com rota.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Organizar, em um exercício, cálculos de consumo e uma consulta de rota.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Aplicativo de estudo publicado no GitHub pessoal.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Kotlin e mapa, visíveis na interface do estudo. A versão anterior também citava Maps API.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Juntar cálculo, histórico de abastecimento e mapa no mesmo fluxo de estudo.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Telas de cálculo, registros e uma rota de demonstração. Não é um serviço de postos em produção.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/Combustivel_app" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+              <p>Controle de gastos: comparação álcool × gasolina, média de consumo, histórico e rota no mapa.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Maps API</li></ul>
+              <span class="project-cta">Ver código ↗</span>
             </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/img_site.jpg" width="1059" height="943" alt="Telas do estudo Casa por Temporada, com lista de anúncios e detalhe de um imóvel" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Estudo</p>
-              <h3>Casa por Temporada</h3>
-              <p>Estudo de anúncios de imóveis, com lista, detalhe do anúncio e uma ação de contato. A descrição já publicada também citava cadastro, imagens e recuperação de conta por e-mail.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Exercício de listar imóveis e abrir o detalhe de um anúncio.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Aplicativo de estudo publicado no GitHub pessoal.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Java e Firebase, como já indicados neste portfólio.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Separar a lista dos anúncios da tela de detalhe, incluindo uma ação de contato.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Fluxo de demonstração entre “Meus anúncios”, o detalhe do imóvel e um botão de ligação. Não é uma imobiliária em operação.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/casa_temporada" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/img_olx.jpg" width="1062" height="940" alt="Telas do clone de estudo OLX, com listagem de anúncios e formulário de novo anúncio" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Clone · estudo</p>
+          </a>
+          <a class="project spot reveal" data-tags="kotlin firebase" href="https://github.com/lucas8calderon/OLX" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/img_olx.jpg" width="1062" height="940" alt="Telas do clone de estudo da OLX: listagem e novo anúncio" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Clone de estudo · Marketplace</p>
               <h3>OLX</h3>
-              <p>Clone de estudo de classificados. A imagem mostra a listagem e o cadastro de um anúncio. A descrição anterior também citava favoritos, chat e geolocalização. Não é o aplicativo da OLX.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Reproduzir, como estudo, a listagem e o cadastro de anúncios de um classificado.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Implementação publicada no GitHub pessoal.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Kotlin e Firebase, como já indicados neste portfólio.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Montar a lista de anúncios e o formulário de um novo anúncio no clone.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Telas de demonstração com anúncios fictícios. Não há operação comercial por trás do exercício.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/OLX" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+              <p>Classificados com listagem e cadastro de anúncios, usando dados fictícios.</p>
+              <ul class="tag-list"><li>Kotlin</li><li>Firebase</li></ul>
+              <span class="project-cta">Ver código ↗</span>
             </div>
-          </article>
-
-          <article class="project reveal">
-            <figure class="project-media">
-              <img src="./img/web2.jpg" width="1062" height="940" alt="Telas do clone de estudo iFood, com acesso e uma lista de produtos" loading="lazy">
-            </figure>
-            <div>
-              <p class="project-kicker">Clone · estudo</p>
+          </a>
+          <a class="project spot reveal" data-tags="java firebase" href="https://github.com/lucas8calderon/casa_temporada" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/img_site.jpg" width="1059" height="943" alt="Telas do app Casa por Temporada: anúncios e detalhe de imóvel" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Estudo · Imóveis</p>
+              <h3>Casa por Temporada</h3>
+              <p>Lista de anúncios, detalhe do imóvel e ação de contato direto com o anunciante.</p>
+              <ul class="tag-list"><li>Java</li><li>Firebase</li></ul>
+              <span class="project-cta">Ver código ↗</span>
+            </div>
+          </a>
+          <a class="project spot reveal" data-tags="java" href="https://github.com/lucas8calderon/ifood" target="_blank" rel="noopener noreferrer">
+            <figure><img src="./img/web2.jpg" width="1062" height="940" alt="Telas do clone de estudo do iFood: acesso e lista de produtos" loading="lazy"></figure>
+            <div class="project-body">
+              <p class="project-kind">Clone de estudo · Delivery</p>
               <h3>iFood</h3>
-              <p>Clone de estudo com tela de acesso e listagem de produtos. Não é o iFood e não representa integração com restaurantes reais.</p>
-              <dl class="facts">
-                <div>
-                  <dt>Problema</dt>
-                  <dd>Exercício de reproduzir acesso e uma lista de produtos.</dd>
-                </div>
-                <div>
-                  <dt>Contribuição</dt>
-                  <dd>Implementação publicada no GitHub pessoal.</dd>
-                </div>
-                <div>
-                  <dt>Tecnologias</dt>
-                  <dd>Java, como já indicado neste portfólio para este repositório.</dd>
-                </div>
-                <div>
-                  <dt>Desafios</dt>
-                  <dd>Separar a entrada da conta da listagem de itens no clone.</dd>
-                </div>
-                <div>
-                  <dt>Solução</dt>
-                  <dd>Telas de demonstração. O e-mail visível na imagem é placeholder, não um contato.</dd>
-                </div>
-              </dl>
-              <a class="project-link" href="https://github.com/lucas8calderon/ifood" target="_blank" rel="noopener noreferrer">Código no GitHub</a>
+              <p>Tela de acesso e listagem de produtos, com foco na separação entre autenticação e catálogo.</p>
+              <ul class="tag-list"><li>Java</li></ul>
+              <span class="project-cta">Ver código ↗</span>
             </div>
-          </article>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICAÇÕES: já listadas no portfólio anterior. Não acrescentar itens novos. -->
-    <section class="section" id="certificacoes" aria-labelledby="cert-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Complemento</p>
-          <h2 id="cert-title">Certificações já listadas</h2>
-          <p class="section-intro">Itens que já constavam nesta página. Não há documentos anexados aqui.</p>
-        </div>
-        <div class="cert-list">
-          <article class="cert reveal">
-            <p class="cert-year">2023</p>
-            <h3>Kotlin Backend Developer</h3>
-            <p class="cert-issuer">TQI</p>
-          </article>
-          <article class="cert reveal">
-            <p class="cert-year">2023</p>
-            <h3>Kotlin Experience</h3>
-            <p class="cert-issuer">DIO</p>
-          </article>
-          <article class="cert reveal">
-            <p class="cert-year">2022</p>
-            <h3>Formação Android Developer</h3>
-            <p class="cert-issuer">DIO</p>
-          </article>
-          <article class="cert reveal">
-            <p class="cert-year">2022</p>
-            <h3>Mobile Developer</h3>
-            <p class="cert-issuer">Santander Brasil</p>
-          </article>
-          <article class="cert reveal">
-            <p class="cert-year">2022</p>
-            <h3>Android Developer</h3>
-            <p class="cert-issuer">NTT DATA</p>
-          </article>
-          <article class="cert reveal">
-            <p class="cert-year">2021</p>
-            <h3>Programação Orientada a Objetos</h3>
-            <p class="cert-issuer">Instituto Federal de São Paulo</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- RECOMENDAÇÕES: textos já publicados nesta página, mantidos na redação original. -->
+    <!-- RECOMENDAÇÕES: textos originais publicados por colegas -->
     <section class="section" id="recomendacoes" aria-labelledby="recomendacoes-title">
       <div class="container">
-        <div class="section-head reveal">
+        <header class="section-head reveal">
           <p class="eyebrow">Recomendações</p>
-          <h2 id="recomendacoes-title">Textos já publicados por colegas</h2>
-        </div>
+          <h2 id="recomendacoes-title">O que dizem quem trabalhou comigo.</h2>
+        </header>
         <div class="quote-grid">
-          <blockquote class="quote reveal">
+          <blockquote class="quote spot reveal">
             <p>“O Lucas é um profissional exemplar, sua característica marcante é a comunicação, sendo capaz de simplificar conceitos complexos, relatar bloqueios, fazer boas perguntas e ajudar outras pessoas. Além disso, ele se mantém atualizado com as tendências do mercado e está sempre em busca de escrever códigos que sigam as boas práticas. O Lucas faz uma grande diferença na equipe e isso é rapidamente observado.”</p>
-            <footer>
-              <cite>Cauê Santos</cite>
-              <span class="author-role">Senior Mobile Engineer | Android | iOS | Kotlin Multiplatform</span>
-            </footer>
+            <footer><cite>Cauê Santos</cite><span>Senior Mobile Engineer · Android · iOS · KMP</span></footer>
           </blockquote>
-          <blockquote class="quote reveal">
+          <blockquote class="quote spot reveal">
             <p>“Após desenvolver um projeto junto ao Lucas eu consegui perceber que ele possuí muito comprometimento com a equipe e o produto, sempre trazendo as melhores práticas do mercado e também sempre orientando os colegas de equipe quando necessário. Além de ser muito bom na parte técnica (especialmente no desenvolvimento Android) o Lucas possuí uma ótima comunicação.”</p>
-            <footer>
-              <cite>Gustavo Morais Oliveira de Jesus</cite>
-              <span class="author-role">Android Developer | Kotlin | Java | Jetpack Compose</span>
-            </footer>
+            <footer><cite>Gustavo Morais Oliveira de Jesus</cite><span>Android Developer · Kotlin · Compose</span></footer>
           </blockquote>
-          <blockquote class="quote reveal">
+          <blockquote class="quote spot reveal">
             <p>“O Lucas é um profissional muito dedicado e prestativo, sempre disposto a ajudar e compartilhar os seus conhecimentos. Além de estar sempre se atualizando e buscando aprender cada dia mais, tem grande conhecimento na área em que atua. Trabalha bem em equipe, é bem flexível e organizado. Foi um excelente parceiro nos projetos que trabalhamos juntos!”</p>
-            <footer>
-              <cite>Daniel Lopes</cite>
-              <span class="author-role">Engenheiro de Dados na BlueShift | Analista de Dados | Agronegócio</span>
-            </footer>
+            <footer><cite>Daniel Lopes</cite><span>Engenheiro de Dados na BlueShift</span></footer>
           </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO E CERTIFICAÇÕES -->
+    <section class="section" id="formacao" aria-labelledby="formacao-title">
+      <div class="container edu-grid">
+        <div class="reveal">
+          <p class="eyebrow">Formação</p>
+          <h2 id="formacao-title">Base acadêmica.</h2>
+          <ul class="edu-list">
+            <li><strong>Bacharelado em Engenharia de Computação</strong><span>Universidade Cruzeiro do Sul · 2019–2023</span></li>
+            <li><strong>CST em Análise e Desenvolvimento de Sistemas</strong><span>UNIVERITAS · 2021–2022</span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Certificações</p>
+          <h2>Aprendizado contínuo.</h2>
+          <ul class="cert-list">
+            <li><span class="cert-year">2023</span><strong>Kotlin Backend Developer</strong><span>TQI</span></li>
+            <li><span class="cert-year">2023</span><strong>Kotlin Experience</strong><span>DIO</span></li>
+            <li><span class="cert-year">2022</span><strong>Formação Android Developer</strong><span>DIO</span></li>
+            <li><span class="cert-year">2022</span><strong>Mobile Developer</strong><span>Santander Brasil</span></li>
+            <li><span class="cert-year">2022</span><strong>Android Developer</strong><span>NTT DATA</span></li>
+            <li><span class="cert-year">2021</span><strong>Programação Orientada a Objetos</strong><span>IFSP</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section class="section" id="contato" aria-labelledby="contato-title">
-      <div class="container contact-layout">
-        <div class="contact-copy reveal">
-          <p class="eyebrow">Contato</p>
-          <h2 id="contato-title">Vamos construir algo relevante?</h2>
-          <p>Se a conversa for sobre Android nativo, arquitetura ou uma integração em produto real, estou disponível. O objetivo são oportunidades Android pleno e sênior.</p>
-          <p>Os telefones e e-mails abaixo já estavam neste portfólio. Não há formulário nesta página.</p>
-        </div>
-        <div class="contact-panel reveal">
-          <ul class="contact-list">
-            <li>
-              <a class="contact-link" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.48h4.52V24H.24V8.48zM8.34 8.48h4.33v2.12h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V24h-4.52v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V24H8.34V8.48z"></path></svg>
-                <span>LinkedIn<small>linkedin.com/in/lucascalderon</small></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link" href="mailto:lucas8calderon@hotmail.com">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
-                <span>E-mail<small>lucas8calderon@hotmail.com</small></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link" href="mailto:calderonlucas720@gmail.com">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
-                <span>E-mail<small>calderonlucas720@gmail.com</small></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.28 9.28 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
-                <span>GitHub<small>github.com/lucas8calderon</small></span>
-              </a>
-            </li>
-          </ul>
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="status"><span class="dot" aria-hidden="true"></span>Disponível para novas oportunidades</p>
+          <h2 id="contato-title">Precisa de alguém para o seu app Android?</h2>
+          <p class="contact-lede">Vagas Android Pleno ou Sênior, conversa técnica ou troca de ideias: respondo rápido.</p>
+
+          <div class="contact-actions">
+            <button class="btn btn-primary btn-lg copy-email" type="button" data-email="calderonlucas720@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              <span class="copy-label">calderonlucas720@gmail.com</span>
+            </button>
+            <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">LinkedIn ↗</a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me">GitHub ↗</a>
+          </div>
+
           <ul class="contact-extra">
-            <li>Telefone: <a href="tel:+5511977844172">+55 (11) 97784-4172</a></li>
-            <li>Telefone: <a href="tel:+5511992919423">+55 (11) 99291-9423</a></li>
-            <li>São Paulo, SP</li>
+            <li><a href="mailto:lucas8calderon@hotmail.com">lucas8calderon@hotmail.com</a></li>
+            <li><a href="tel:+5511977844172">+55 (11) 97784-4172</a></li>
+            <li><a href="tel:+5511992919423">+55 (11) 99291-9423</a></li>
           </ul>
         </div>
       </div>
@@ -711,25 +483,12 @@ class HomeViewModel : ViewModel() {
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <p class="footer-name">Lucas Calderon</p>
-        <p class="footer-role">Android Software Engineer</p>
-      </div>
-      <ul class="footer-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">LinkedIn</a></li>
-        <li><a href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <p class="legal">© 2026 Lucas Calderon</p>
+      <p><span class="brand-mark sm" aria-hidden="true">LC</span> Lucas Calderon · Android Engineer</p>
+      <p class="legal">© 2026 · Feito à mão com HTML, CSS e JS</p>
     </div>
   </footer>
 
+  <div class="toast" role="status" aria-live="polite"></div>
   <script src="./app.js"></script>
 </body>
 </html>
