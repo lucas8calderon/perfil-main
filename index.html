@@ -16,7 +16,7 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Calderon | Android Engineer</title>
-  <meta name="description" content="Lucas Calderon, Android Engineer em São Paulo. 4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
+  <meta name="description" content="Lucas Calderon, Android Engineer em São Paulo. 4+ anos com Android nativo em Kotlin e Jetpack Compose: pagamentos em Smart POS (EMV, NFC, QR Code, 8 adquirentes) e apps bancários (Bradesco, Next).">
   <meta name="author" content="Lucas Calderon">
   <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="https://lucas8calderon.github.io/perfil-main/">
@@ -24,7 +24,7 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Lucas Calderon">
   <meta property="og:title" content="Lucas Calderon | Android Engineer">
-  <meta property="og:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
+  <meta property="og:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: pagamentos em Smart POS (EMV, NFC, QR Code, 8 adquirentes) e apps bancários (Bradesco, Next).">
   <meta property="og:url" content="https://lucas8calderon.github.io/perfil-main/">
   <meta property="og:image" content="https://lucas8calderon.github.io/perfil-main/img/og.png">
   <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
   <meta property="og:image:alt" content="Lucas Calderon, Android Engineer">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lucas Calderon | Android Engineer">
-  <meta name="twitter:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: apps bancários (Bradesco, Next) e Smart POS para pagamentos.">
+  <meta name="twitter:description" content="4+ anos com Android nativo em Kotlin e Jetpack Compose: pagamentos em Smart POS (EMV, NFC, QR Code, 8 adquirentes) e apps bancários (Bradesco, Next).">
   <meta name="twitter:image" content="https://lucas8calderon.github.io/perfil-main/img/og.png">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./favicon.png" type="image/png" sizes="32x32">
@@ -120,15 +120,15 @@
             <span class="rotator" aria-live="polite"><span class="rotator-word">bancos digitais</span></span>
           </h1>
 
-          <p class="lede">Engenheiro Android com <strong>4+ anos em Kotlin e Jetpack Compose</strong>. Já entreguei funcionalidades nos apps do <strong>Bradesco</strong> e do <strong>Next</strong> e apps para <strong>Smart POS</strong> no setor de pagamentos.</p>
+          <p class="lede">Engenheiro Android com <strong>4+ anos em Kotlin e Jetpack Compose</strong>. Hoje construo apps de pagamento para <strong>Smart POS</strong> (EMV, NFC, QR Code), já integrados às maquininhas de <strong>8 adquirentes</strong>, e antes entreguei funcionalidades nos apps do <strong>Bradesco</strong> e do <strong>Next</strong>.</p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projetos">Ver projetos
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn-ghost js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">
-              <span class="btn-label">Currículo</span>
-              <span class="visually-hidden cv-note">no LinkedIn, enquanto o PDF não está publicado</span>
+            <a class="btn btn-ghost js-cv" href="./cv/Lucas-Calderon-Curriculo.pdf" download="Lucas-Calderon-Curriculo.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+              <span class="btn-label">Baixar currículo</span>
             </a>
           </div>
 
@@ -151,7 +151,7 @@
             <dl class="profile-sheet">
               <div><dt>Cargo-alvo</dt><dd>Android Engineer · Pleno / Sênior</dd></div>
               <div><dt>Experiência</dt><dd>4+ anos com Android nativo</dd></div>
-              <div><dt>Domínios</dt><dd>Bancos digitais · Pagamentos · Smart POS</dd></div>
+              <div><dt>Domínios</dt><dd>Pagamentos (EMV, NFC, QR Code) · Smart POS · Bancos digitais</dd></div>
               <div><dt>Stack principal</dt><dd>Kotlin, Jetpack Compose, Coroutines, Hilt</dd></div>
               <div><dt>Arquitetura</dt><dd>MVVM, Clean Architecture, modularização</dd></div>
               <div><dt>Formação</dt><dd>Bacharel em Engenharia de Computação</dd></div>
@@ -159,7 +159,7 @@
             </dl>
             <div class="panel-foot">
               <a class="btn btn-primary btn-sm" href="#contato">Falar com o Lucas</a>
-              <a class="text-link js-cv" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">Ver perfil completo ↗</a>
+              <a class="text-link" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">Ver perfil completo ↗</a>
             </div>
           </div>
 
@@ -175,7 +175,8 @@
     <span class="s">"MVVM + Clean Architecture"</span>
   <span class="k">override val</span> shipped = <span class="f">setOf</span>(
     <span class="t">Banking</span>(<span class="s">"Bradesco"</span>, <span class="s">"Next"</span>),
-    <span class="t">Payments</span>(<span class="s">"Smart POS"</span>)
+    <span class="t">Payments</span>(<span class="s">"EMV"</span>, <span class="s">"NFC"</span>, <span class="s">"QR"</span>),
+    <span class="t">SmartPOS</span>(acquirers = <span class="n">8</span>)
   )
   <span class="k">override fun</span> <span class="f">nextRole</span>() =
     <span class="t">Role</span>.<span class="t">Android</span>(<span class="t">Pleno</span>, <span class="t">Senior</span>)
@@ -195,7 +196,7 @@
           <li class="stat"><strong><span class="count" data-to="4">4</span>+</strong><span>anos com Android nativo</span></li>
           <li class="stat"><strong><span class="count" data-to="2">2</span></strong><span>apps bancários: Bradesco e Next</span></li>
           <li class="stat"><strong><span class="count" data-to="3">3</span></strong><span>empresas de tecnologia</span></li>
-          <li class="stat"><strong><span class="count" data-to="6">6</span></strong><span>certificações Android / Kotlin</span></li>
+          <li class="stat"><strong><span class="count" data-to="8">8</span></strong><span>adquirentes integradas em Smart POS</span></li>
         </ul>
       </div>
     </section>
@@ -204,10 +205,10 @@
     <div class="marquee" aria-label="Tecnologias">
       <div class="marquee-track">
         <ul>
-          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>Firebase</li><li>Java</li><li>Navigation</li><li>DataBinding</li><li>Smart POS</li><li>Git</li>
+          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Smart POS</li><li>EMV</li><li>NFC</li><li>Hilt</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>AIDL</li><li>Firebase</li><li>Java</li><li>KMP</li>
         </ul>
         <ul aria-hidden="true">
-          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>Firebase</li><li>Java</li><li>Navigation</li><li>DataBinding</li><li>Smart POS</li><li>Git</li>
+          <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Smart POS</li><li>EMV</li><li>NFC</li><li>Hilt</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>AIDL</li><li>Firebase</li><li>Java</li><li>KMP</li>
         </ul>
       </div>
     </div>
@@ -234,12 +235,12 @@
           <article class="cap spot reveal">
             <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>
             <h3>Pagamentos e Smart POS</h3>
-            <p>Apps que rodam em maquininhas de pagamento, com integração ao dispositivo e a APIs de backend.</p>
+            <p>Fluxos transacionais em maquininhas de 8 adquirentes: EMV, NFC, QR Code, SDKs e comunicação via AIDL.</p>
           </article>
           <article class="cap spot reveal">
             <span class="cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
             <h3>Time e qualidade</h3>
-            <p>Revisão de código, SCRUM e comunicação clara. Colegas destacam a capacidade de simplificar o complexo.</p>
+            <p>Testes unitários, sustentação em produção, releases na Play Store e revisão de código, com comunicação clara no time.</p>
           </article>
         </div>
       </div>
@@ -258,7 +259,16 @@
             <div class="job-when"><span class="pill pill-live">Atual</span>mar 2026 — hoje</div>
             <div class="job-body">
               <h3>Engenheiro de Software <span class="at">@ Phoebus</span></h3>
-              <p class="job-where">João Pessoa, PB</p>
+              <p class="job-where">João Pessoa, PB · Meios de pagamento</p>
+              <p>Desenvolvimento e evolução de apps Android nativos para o ecossistema de pagamentos, com foco em arquitetura, performance e confiabilidade de aplicações transacionais.</p>
+              <ul class="job-points">
+                <li>Integrações com APIs REST, <strong>adquirentes e terminais POS/Smart POS</strong> em fluxos críticos de pagamento.</li>
+                <li>Investigação de causa-raiz em transações com <strong>EMV, NFC (contactless), cartões e QR Code</strong>, via depuração e análise de logs.</li>
+                <li>Sustentação de apps em produção, componentes reutilizáveis em Compose e revisão de código.</li>
+              </ul>
+              <ul class="tag-list" aria-label="Tecnologias na Phoebus">
+                <li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Clean Architecture</li><li>EMV</li><li>NFC</li><li>QR Code</li><li>Smart POS</li>
+              </ul>
             </div>
           </li>
           <li class="job reveal">
@@ -266,9 +276,14 @@
             <div class="job-body">
               <h3>Desenvolvedor Android <span class="at">@ Opdv</span></h3>
               <p class="job-where">Porto Alegre, RS · Pagamentos</p>
-              <p>Apps Android para <strong>Smart POS</strong> no contexto de meios de pagamento, com Kotlin, Jetpack Compose, Hilt, Retrofit e Firebase.</p>
+              <p>Apps de pagamento e automação comercial para maquininhas <strong>Smart POS das principais adquirentes</strong>: Cielo, Rede, PagBank, Stone, Vero, Sicredi, Getnet e iFood.</p>
+              <ul class="job-points">
+                <li>Implementação de SDKs de pagamento e comunicação app ↔ hardware via <strong>AIDL, Socket e Intents</strong>.</li>
+                <li>Publicação na <strong>Google Play Store</strong> acompanhando todo o ciclo de release, com monitoramento no Crashlytics e Analytics.</li>
+                <li>Testes unitários e trabalho próximo com backend, QA e produto.</li>
+              </ul>
               <ul class="tag-list" aria-label="Tecnologias na Opdv">
-                <li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Retrofit</li><li>Firebase</li><li>Smart POS</li>
+                <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines</li><li>Hilt</li><li>Retrofit</li><li>AIDL</li><li>Firebase</li><li>Smart POS</li>
               </ul>
             </div>
           </li>
@@ -277,7 +292,7 @@
             <div class="job-body">
               <h3>Desenvolvedor Android <span class="at">@ Foursys</span></h3>
               <p class="job-where">Barueri, SP · Bancário</p>
-              <p>Módulos de <strong>Investimentos, Poupança e Comprovantes</strong> nos apps do <strong>Bradesco</strong> e do <strong>Next</strong>. Modularização, padronização de design system, revisão de código e SCRUM.</p>
+              <p>Módulos de <strong>Investimentos, Poupança e Comprovantes</strong> nos apps do <strong>Bradesco</strong> e do <strong>Next</strong>. Features de modularização, padronização do design system, recursos de acessibilidade, revisão de código e SCRUM.</p>
               <ul class="tag-list" aria-label="Tecnologias na Foursys">
                 <li>Kotlin</li><li>Java</li><li>MVVM</li><li>Clean Architecture</li><li>Coroutines</li><li>Hilt</li><li>Koin</li><li>Jetpack</li><li>Firebase</li>
               </ul>
@@ -305,19 +320,19 @@
         <div class="stack-grid">
           <article class="stack-card spot reveal">
             <h3>Android</h3>
-            <ul class="tag-list"><li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>Coroutines</li><li>Navigation</li><li>DataBinding</li><li>Lifecycle</li></ul>
+            <ul class="tag-list"><li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>Coroutines</li><li>Navigation</li><li>DataBinding</li><li>Lifecycle</li><li>KMP</li></ul>
           </article>
           <article class="stack-card spot reveal">
-            <h3>Arquitetura</h3>
-            <ul class="tag-list"><li>MVVM</li><li>Clean Architecture</li><li>Modularização</li><li>Hilt</li><li>Koin</li></ul>
+            <h3>Arquitetura e qualidade</h3>
+            <ul class="tag-list"><li>MVVM</li><li>MVI</li><li>Clean Architecture</li><li>SOLID</li><li>Modularização</li><li>Hilt</li><li>Koin</li><li>Testes unitários</li></ul>
           </article>
           <article class="stack-card spot reveal">
-            <h3>Rede e dados</h3>
-            <ul class="tag-list"><li>Retrofit</li><li>APIs REST</li><li>Firebase</li></ul>
+            <h3>Pagamentos e hardware</h3>
+            <ul class="tag-list"><li>Smart POS</li><li>EMV</li><li>NFC</li><li>QR Code</li><li>SDKs de adquirentes</li><li>AIDL</li><li>Socket</li><li>Intents</li></ul>
           </article>
           <article class="stack-card spot reveal">
-            <h3>Domínio e processo</h3>
-            <ul class="tag-list"><li>Smart POS</li><li>Fluxos de pagamento</li><li>Design system</li><li>Code review</li><li>SCRUM</li><li>Git</li></ul>
+            <h3>Dados, release e processo</h3>
+            <ul class="tag-list"><li>Retrofit</li><li>APIs REST</li><li>Firebase</li><li>Crashlytics</li><li>Play Store</li><li>Gradle</li><li>Git / GitLab</li><li>SCRUM</li></ul>
           </article>
         </div>
       </div>
@@ -469,6 +484,7 @@
             </button>
             <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/lucascalderon/" target="_blank" rel="noopener noreferrer me">LinkedIn ↗</a>
             <a class="btn btn-ghost btn-lg" href="https://github.com/lucas8calderon" target="_blank" rel="noopener noreferrer me">GitHub ↗</a>
+            <a class="btn btn-ghost btn-lg js-cv" href="./cv/Lucas-Calderon-Curriculo.pdf" download="Lucas-Calderon-Curriculo.pdf">Baixar currículo (PDF)</a>
           </div>
 
           <ul class="contact-extra">

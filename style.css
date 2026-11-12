@@ -251,6 +251,7 @@ strong { color: var(--text); font-weight: 600; }
 .code-window .t { color: var(--c-t); }
 .code-window .s { color: var(--c-s); }
 .code-window .f { color: var(--c-f); }
+.code-window .n { color: #d2a8ff; }
 
 /* Números */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: clamp(2.5rem, 6vw, 4.5rem); border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); overflow: hidden; }
@@ -313,6 +314,9 @@ strong { color: var(--text); font-weight: 600; }
 .job-body .at { color: var(--accent); }
 .job-where { color: var(--faint); font-size: .88rem; margin-top: -.35rem; }
 .job-body > p:not(.job-where) { color: var(--muted); }
+.job-points { display: grid; gap: .4rem; margin: .1rem 0 .3rem; }
+.job-points li { position: relative; padding-left: 1.2rem; color: var(--muted); font-size: .95rem; }
+.job-points li::before { content: ""; position: absolute; left: 0; top: .62em; width: .45rem; height: .45rem; border-radius: 2px; background: var(--accent); transform: rotate(45deg) scale(.8); }
 .job-prev .job-body h3 { font-size: 1.1rem; color: var(--muted); }
 .job-prev .job-body p { font-size: .94rem; }
 
